@@ -8,7 +8,7 @@ This repository is based on the SOICT 2023 contest's Spoken Language Understandi
 [https://huggingface.co/nguyenvulebinh/wav2vec2-large-vi](https://huggingface.co/nguyenvulebinh/wav2vec2-large-vi)
 
 ## Processed Data and Model
-- Due to limited resources for training, I use Kaggle's free accelerator. As a result, the processed data and additional models are located on the Kaggle platform.
+- Due to the limited resources for training, I use Kaggle's free accelerator. As a result, the processed data and additional models are located on the Kaggle platform.
   - [https://www.kaggle.com/code/noobhocai/soict2023-slu-preprocess-and-augmentation-stage-1](https://www.kaggle.com/code/noobhocai/soict2023-slu-preprocess-and-augmentation-stage-1)
   - [https://www.kaggle.com/code/noobhocai/soict2023-slu-wav2vec2-training-stage-1](https://www.kaggle.com/code/noobhocai/soict2023-slu-wav2vec2-training-stage-1)
   - [https://www.kaggle.com/code/noobhocai/soict-2023-wav2vec2-n-gram-inference-stage-1](https://www.kaggle.com/code/noobhocai/soict-2023-wav2vec2-n-gram-inference-stage-1)
@@ -21,9 +21,13 @@ This repository is based on the SOICT 2023 contest's Spoken Language Understandi
 
 - Next, I fine-tuned the pre-trained `wav2vec2` model to get even better accuracy.
 
-- I also created a language model using `ngrams` to correct any mistakes made by the automatic speech recognition system. This took the accuracy of the model to the next level.
+- I also created a language model using `ngrams` to correct any mistakes made by the automatic speech recognition system. The accuracy of the model was significantly improved by this.
 
-- Finally, I used `A Bi-model based RNN Semantic Frame Parsing Model` for intent detection and slot filling. This model is really cool because it uses shared states to assist each other's tasks and make the interpretation of the user's input super accurate.
+- Finally, I used `A Bi-model based RNN Semantic Frame Parsing Model` for intent detection and slot filling. This model uses shared states to enhance task assistance and improve input interpretation accuracy.
+
+## Conclusion
+- As I mentioned earlier, my limited resources prevented the model from fully converging.
+- In addition, maybe I'll use other models to correct grammatical errors for better accuracy.
 
 
 
